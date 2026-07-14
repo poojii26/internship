@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="fullname">Name:</label><br>
+        <input type="text" placeholder="Enter the name" name="fullname" id=""fullname"  required> <br>
+   <!-- Email -->
+    <label for="email">email address</label><br>
+    <input type="text" placeholder="enter the email" name="email" id="email" required><br>
+
+<!--password-->
+<label for="psw">password</label><br>
+<input type="text" placeholder="enter the password" name="psw" id="psw" minlength="8" required><br>
+<!--number input-->
+<label for="age">age</label><br>
+<input type="number" placeholder="" min="18" max="100" name="age" id="age" required><br>
+<!-- radio button -->
+<p>gender</p>
+<input type="radio" name="gender" id="male" value="male">
+<label for="gender">male</label>
+<input type="radio" name="gender" id="female" value="female">
+<label for="gender">female</label><br>
+<!-- chechbox -->
+ <p>languages known:</p>
+<input type="checkbox" name="html" id="html" value="html">
+<label for="html">html</label>
+<input type="checkbox" name="css" id="css" value="css">
+<label for="css">css</label>
+<input type="checkbox" name="javascript" id="javascript" value="javascript">
+<label for="javascript">javascript</label><br>
+<!-- dropdown -->
+<label for="country">country</label>
+<select name="country" id="country">
+<option value="india">india</option>
+<option value="usa">usa</option>
+<option value="uk">uk</option>
+<option value="china">china</option>
+<option value="korea">korea</option>
+<option value="bali">bali</option>
+</select><br>
+<!-- textarea  -->
+ <label for="message">message</label>
+ <textarea name="message" id="message" placeholder="please drop a message"></textarea><br>
+ <!-- file upload -->
+  <label for="resume">upload resume</label>
+  <input type="file" name="resume" id="resume"><br>
+<!-- date picker -->
+ <label for="dob">date of birth</label>
+ <input type="date" name="dob" id="dob"><br>
+<!--button--><br>
+<button type="submit">submit</button>
+<button type="reset">reset</button>
+</form>
+</body>
+</html>
