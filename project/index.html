@@ -3,151 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio Poojitha</title></head>
+ 
+    <!-- SEO Meta Tags -->
+    <title>poojitha | Web Developer Portfolio</title>
+    <meta name="description" content="Full-stack web developer specializing
+          in React and Node.js. Available for freelance projects.">
+    <meta name="keywords" content="web developer, React, JavaScript, portfolio">
+    <meta name="author" content="John Doe">
+ 
+    <!-- Open Graph (for Facebook, LinkedIn, WhatsApp previews) -->
+    <meta property="og:title" content="John Doe | Web Developer">
+    <meta property="og:description" content="Check out my portfolio and projects!">
+    <meta property="og:image" content="https://johndoe.com/preview.jpg">
+    <meta property="og:url" content="https://johndoe.com">
+    <meta property="og:type" content="website">
+ 
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="John Doe | Web Developer">
+    <meta name="twitter:description" content="Check out my portfolio!">
+<link rel="icon" href="pooji ppp.jpeg"></head>
 <body>
-    <nav>
-        <a href="#about">about</a>
-        <a href="#skills">skills</a>
-        <a href="#project">project</a>
-        <a href="#contact">contact</a>
-    </nav>
     <header>
+    <nav>
+        <div class="logo">AP</div>
+        <ul>
+        <li><a href="#about">about</a></li>
+        <li> <a href="#skills">skills</a></li>
+        <li><a href="#project">project</a></li>
+        <li><a href="#contact">contact</a></li>
+        </ul>
+        <button class="theme-toggle" aria-label="toggle dark mode" title="toggle dark mode">🌙</button>
+    <button class="menu-toggle" aria-label="toggle navigation" aria-expanded="false"> ☰</button>
+    </nav>
+    </header>
+    <main>
+        <section id="hero" class="hero-section">
         <h1> Hi, I am Adoni Poojitha. </h1>
         <p>I’m a developer who genuinely loves turning a blank screen into something useful and beautiful. I spend most of my time coding clean, responsive websites using HTML, CSS, and JavaScript, and I rely on React to keep things fast, organized, and smooth for the user. But I also have a nerdy side that loves deep problem-solving, which is where my C++ background comes in—it helps me think through the heavy logic and make sure everything runs beautifully behind the scenes.</p>
-    <a href="#hire">hire me</a>
-    </header>
-    <section id="about">
-        <h2>about me</h2>
-        <P>I’m a developer who loves turning a blank screen into something useful and beautiful. I build clean, responsive front-ends using HTML5, CSS, JavaScript , and React to keep user experiences fast and intuitive. At the same time, my C++ background gives me the deep analytical skills to write efficient algorithms, use the STL, and handle heavy logic under the hood.
-        </P> 
-        <img src="pooji ppp.jpeg" alt="image" width="100px" length="100px"> 
-        
+    <div class="hero-button">
+    <a href="#project"> view my work</a> 
+    <a href="#contact">contact me </a>  
+    </div> 
     </section>
-    <section id="skills">
+    <section id="about" class="about-section">
+        <h2>About me</h2>
+        <figure class="profile-figure">
+            <img src="pooji ppp.jpeg" alt=" poojitha's profile photo" width="100px" height="100px">
+            <figcaption>poojitha web developer</figcaption>
+        </figure>
+        <p>I am a passinate web developer</p>
+    </section>
+    
+    
+    
+    <section id="skills" class="skill-section">
         <h2>My skills</h2>
-         <ol>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            
-        </ol>
-        
+        <div class="skill-grid">
+            <div class="skill-item data-level=90">HTML</div>
+            <div class="skill-item data-level=80">CSS</div>
+            <div class="skill-item data-level=70">JavaScript</div>
+            <div class="skill-item data-level=85">React</div>
+        </div>
     </section>
-    <section id="project">
-        <h2>My projects</h2>
-        <h3>Project 1</h3>
-        <p>The description of the project 1 </p>
-<a href="#view project">view project</a>
-<h3>Project 2</h3>
-        <p>The description of the project 2 </p>
-<a href="#view project">view project</a> 
-<h3>Project 3</h3>
-        <p>The description of the project 3 </p>
-<a href="#view project">view project</a>
+    <section id="project" class="project-section">
+        <h2>my projects</h2>
+        <div class="project-grid">
+            <article class="project-card" data-category="web">
+                <img src="project1.jpg" alt="weather app screenshot" width="400px" height="400px">
+                <h3>weather app</h3>
+                <p>real-time weather dashboard using openweather API</p> 
+                <div class="project_tags">
+                    <span>React</span>
+                    <span>API</span>
+                </div>           
+            </article>
+        </div>
     </section>
-    <section id="contact">
-        <h2>Contact me</h2>
-        <p>Email:</p>
-        <a href="https://mail.google.com/mail/u/0/#inbox">adonipoojitha@gmail.com</a><br>
-        <p>Github:</p>
-        <a href="https://github.com/">poojii26</a><br>
-        <p>Linkedin:</p>
-        <a href="https://www.linkedin.com/in/adoni-poojitha-640b50379/">Adoni Poojitha</a><br> -->
-        <H2>Skills</H2>
-        <table border="5px">
-            <tr>
-                
-                <th>Technology</th>
-                <th>Proficiency</th>
-                <th>Years of experience</th>
-            </tr>
-            <tr>
-                <td><HTML></td>
-                <td>Advanced</td>
-                <td>2</td>
-                                         
-            </tr>
-            <tr>
-                <td>CSS</td>
-                <td>Beginner</td>
-                <td>1</td>
-                
-            </tr>
-            <tr>
-                <td>Javascript</td>
-                <td>Intermediate</td>
-                <td>1</td>
-                
-            </tr>
-            <tr>
-                <td>React</td>
-                <td>Beginner</td>
-                <td>1</td>
-                
-            </tr>
-            <tr>
-                <td>C++</td>
-                <td>Advanced</td>
-                <td>3</td>
-                       
-            </tr>
-        </table>
-        <h2>contact me</h2>
-        <p>have a project in mind. lets talk!</p>
-        <form action="">
-             <h1>Registration Form</h1>
-
-    <form>
-
-        <label>Full Name:</label><br>
-        <input type="text" name="fullname" required><br><br>
-
-        <label>Email:</label><br>
-        <input type="email" name="email" required><br><br>
-
-        <label>Password:</label><br>
-        <input type="password" name="password" required><br><br>
-
-        <label>Gender:</label><br>
-        <input type="radio" name="gender" value="Male"> Male
-        <input type="radio" name="gender" value="Female"> Female
-        <input type="radio" name="gender" value="Other"> Other
-        <br><br>
-
-        <label>Skills:</label><br>
-        <input type="checkbox" name="skills" value="HTML"> HTML
-        <input type="checkbox" name="skills" value="CSS"> CSS
-        <input type="checkbox" name="skills" value="JavaScript"> JavaScript
-        <br><br>
-
-        <label>Country:</label><br>
-        <select>
-            <option>India</option>
-            <option>USA</option>
-            <option>Canada</option>
-            <option>Australia</option>
-        </select>
-        <br><br>
-
-        <label>About Yourself:</label><br>
-        <textarea rows="5" cols="30"></textarea>
-        <br><br>
-
-        <label>Upload Resume:</label><br>
-        <input type="file">
-        <br><br>
-
-        <label>Date of Birth:</label><br>
-        <input type="date">
-        <br><br>
-
-        <input type="submit" value="Register">
-        <input type="reset" value="Reset">
+    <a href="#">live demo</a>
+    <a href="#">github</a>
+    <section id="contact" class="contact-section">
+        <h2>Get in touch</h2>
+        <form action="#" method="post" novalidate>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name=" name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">message</label>
+                <textarea name="message" id="message" id="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">send message</button>
         </form>
-        <footer>
-        <p>© 2024 [Your Name]. All rights reserved.</p>
+
+    </section>
+    </main>
+    
+   
+        <footer class="site-footer">
+            <p>
+                &copy; Adoni Poojitha.built with HTML & CSS
+            </p>
+            <nav aria-label="socialmedia lins">
+    <a href="" target="_blank">Github</a>
+    <a href="" target="_blank">Linkedin</a>
+    </nav>
     </footer>
+    
     </section>
 </body>
 </html>
