@@ -29,7 +29,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
-    background:linear-gradient(135deg,  #D3D3D3 ,#BBAED9,#342753);
+    background: linear-gradient(to right, var(--accent), var(--rbg));
 }
 .logo{
     font-size:28px;
