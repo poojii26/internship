@@ -30,9 +30,8 @@ nav{
     align-items: center;
     padding: 20px 5%;
     background:  var(--primary);
-   
 }
-h1{
+.hero-section {
  background:linear-gradient(135deg, beige ,#D3D3D3 ,#BBAED9,#342753);
  }
 .logo{
@@ -51,7 +50,8 @@ h1{
     font-weight: 500;
 }
 .nav-links a:hover{
-    color:var(--accent);
+    color:var(--white);
+
 }
 .skill-grid{
     display: grid;
@@ -67,18 +67,28 @@ h1{
     text-align: center;
     font-weight: bold;
     font-size: 1.2rem;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
+.skill-item:hover{
+transform: translateY(-5px);
+box-shadow: 0px 10px 30px rgba(0,0,0,0.818);
+}
+
 .project-grid{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
     gap: 30px;
 }
 .project-card{
-    background-color:lavender;
+    background-color:rgb(143, 182, 212);
     border-radius: 16px;
     color: white;
     overflow: hidden;
     text-align: center;
+}
+.project-card:hover{
+    transform: translateY(-5px);
+box-shadow: 0px 10px 30px rgba(5, 1, 1, 0.966);
 }
 .project-card img{
     width:100%;
@@ -87,5 +97,137 @@ h1{
 }
 .project-card a{
     text-decoration: none;
-    color: burlywood;
+    color: rgb(220, 133, 19);
 }
+.btn{
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.btn-primary{
+    background-color: #BBAED9;
+    color:var(--white)
+}
+.btn-primary:hover{
+    background-color: transparent;
+    color: #BBAED9;
+    border-color: #BBAED9;
+}
+.btn{
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.btn-secondary{
+    background-color: #BBAED9;
+    color:var(--white)
+}
+.btn-secondary:hover{
+    background-color: transparent;
+    color: #BBAED9;
+    border-color: #BBAED9;
+}
+section{
+    padding: 80px 5%;
+}
+section  h2{
+        font-size: 2.2rem;
+        text-align: center;
+        margin-top: 50px;
+        position: relative;
+    }
+section h2::after{
+        content: "";
+        display: block;
+        width: 200px;
+        height: 5px;
+        background: var(--accent);
+        margin: 12px auto 0;
+        border-radius: 2px;
+    }
+hero-button{
+        animation: fadeinup 0.8s ease 0.2s both;
+    }
+.hero-section h1{
+    animation: fadeinup 0.8s ease 0.2s both;
+
+    }
+@keyframes fadeinup{
+            from{opacity:0; transform:translateY(30px)}
+        }
+        to{
+            opacity:1;transform: translateY(0);
+        }
+.contact-section{
+            max-width: 600px;
+            margin: auto;
+        }
+.form-group{
+    margin-bottom: 24px;
+}       
+.form-group label{
+    display: block;
+    font-weight: 600px;
+    margin-bottom: 8px;
+    color: #BBAED9;
+} 
+.form-group input,.form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #BBAED9;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: border-color 0.3s;
+    box-shadow: 0px  0px 0px  rgba(0,0,0,0.818);
+}
+.form-group input: focus, .form-group textarea:focus{
+    outline: none;
+    border-color: 0 0 0 3PX  rgba(0,0,0,0.818);
+}    
+.site-footer{
+    background-color:var(--primary);
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    padding: 40px 5%;
+}
+.site-footer a{
+    text-decoration: none;
+     color: rgba(255,255,255,0.8);
+}
+.menu-toggle{
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size:30px;
+    cursor: pointer;
+}
+@media (max-width:768px){
+    .menu-toggle{
+        display:block;
+    }
+}
+    .nav-links{
+        display:none;
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:#1B4F72;
+        flex-direction:column;
+        text-align:center;
+        padding:20px 0;
+        gap:20px;
+    }
+ 
+    .nav-links.open{
+        display:flex;
+    }

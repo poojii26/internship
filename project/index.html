@@ -30,10 +30,10 @@
     <nav class="navbar">
         <div class="logo">AP</div>
         <ul class="nav-link">
-        <li><a href="#about">About</a></li>
-        <li> <a href="#skills">Skills</a></li>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <a href="#about">About</a>
+         <a href="#skills">Skills</a> 
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a> 
         </ul>
         <button class="theme-toggle" aria-label="toggle dark mode" title="toggle dark mode">🌙</button>
     <button class="menu-toggle" aria-label="toggle navigation" aria-expanded="false"> ☰</button>
@@ -42,7 +42,7 @@
     <main>
         <section id="hero" class="hero-section">
         <h1> Hi, I am Adoni Poojitha. </h1>
-        <p>I’m a developer who genuinely loves turning a blank screen into something useful and beautiful. I spend most of my time coding clean, responsive websites using HTML, CSS, and JavaScript, and I rely on React to keep things fast, organized, and smooth for the user. But I also have a nerdy side that loves deep problem-solving, which is where my C++ background comes in—it helps me think through the heavy logic and make sure everything runs beautifully behind the scenes.</p>
+        <p class="tagline">I’m a developer who genuinely loves turning a blank screen into something useful and beautiful.</p>
     <div class="hero-button">
     <a href="#project"> view my work</a> 
     <a href="#contact">contact me </a>  
@@ -54,7 +54,7 @@
             <img src="pooji.jpeg" alt=" poojitha's profile photo" width="200px" height="200px">
             <figcaption>poojitha web developer</figcaption>
         </figure>
-        <p>I am a passinate web developer</p>
+        <p>I'm a web developer and designer with a passion for creating beautiful and functional websites. I have experience in HTML, CSS, JavaScript, and various front-end frameworks. I enjoy working on challenging projects and continuously learning new technologies to improve my skills.</p>
     </section>
     
     
@@ -69,7 +69,7 @@
         </div>
     </section>
     <section id="project" class="project-section">
-        <h2>my projects</h2>
+        <h2>my projects</h2><br>
         <div class="project-grid">
             <article class="project-card" data-category="web">
                 <img src="project1.jpg" alt="weather app screenshot" width="300px" height="300px">
@@ -122,7 +122,8 @@
                 <label for="message">message</label>
                 <textarea name="message" id="message" id="message" rows="5" required></textarea>
             </div>
-            <button type="submit">send message</button>
+            <button type="submit" class="btn btn-primary">send message</button>
+            <button type="reset" class="btn btn-secondary">reset</button>
         </form>
 
     </section>
